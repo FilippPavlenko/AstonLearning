@@ -6,6 +6,7 @@ function sumOfArray(arr) {
   return sum;
 }
 function multiplyByTwo(arr){
-    let double = arr.map(a => a*2);
+    let double = arr.map(i => i*2);
     return double;
 }
+
