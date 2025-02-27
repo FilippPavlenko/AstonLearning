@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function myPrompt() {
+        let number = Number(prompt("Введите число"));
+        if (Math.floor(number) == number && typeof number === "number") {
+          let system = Number(prompt("Введите систему счисления для числа"));
+          if (Math.floor(system) == system && system >= 2 && system <= 36 && typeof system === "number") {
+            let toNumber = Number(number);
+            let result = toNumber.toString(system)
+            return alert(`Ответ: число ${number} в ${system}-ой системе счисления = ${result}`);
+          } else return alert("Некорректный ввод!");
+        } else return alert("Некорректный ввод!");
+      }
+      myPrompt();
+    </script>
+  </body>
+</html>
