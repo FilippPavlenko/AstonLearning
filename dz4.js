@@ -46,9 +46,7 @@ function selectFromInterval(arr, a, b) {
 
 // Задание 3 //
 
-const fn = () => {
-    return (property) => (item) => console.log(item[property]);
-};
+const fn = (property) => (item) => console.log(item[property]);
 
 // Задание 4 //
 
